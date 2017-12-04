@@ -1,0 +1,32 @@
+
+.header_index {
+	width: 70%;
+	margin: auto;
+}
+
+.background {
+	background-color: #fff; 
+}
+
+body {
+}
+
+.font {
+	font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.header_menu {
+    padding: 8px;
+    display: block;
+}
+
+#list {
+	text-decoration-line: none;
+	color: blue;
+}
+
+.middle_index {
+	font-family: Calibri;
+	padding: 15px;
+}

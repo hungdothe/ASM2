@@ -1,0 +1,79 @@
+
+.header_index {
+	width: 70%;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+body {
+	background-image:url(background.jpg); 
+	background-size:100%;
+}
+
+.font {
+	font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.menu_bar {
+	width: 25%;
+}
+
+.header_menu {
+    padding: 8px 8px;
+    display: block;
+}
+
+.middle_index {
+	padding: 15px;
+	padding-top:0px;
+}
+
+.list_post {
+	text-decoration: none; 
+	font-size: 10px; 
+	color: blue;
+}
+
+.button {
+	border-radius: 5px;
+}
+
+#index {
+	display: block;
+}
+
+#gioi_thieu, #che_thai_nguyen {
+	display: none;
+}
+
+.body_index {
+	width: 100%;
+}
+
+.text {
+	text-align: justify;
+}
+
+.output table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.output th,.output  td {
+    text-align: left;
+    padding: 8px;
+}
+
+.output tr:nth-child(even){background-color: #f2f2f2}
+
+.output th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sticky {
+      position: fixed;
+      top: 0;
+      width: 70%
+    }

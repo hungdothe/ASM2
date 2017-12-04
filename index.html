@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="my-style.css">
+  </head>
+  <body style="background-image:url(background.jpg); background-size:100%; background-attachment: fixed;background-position: center;" onscroll="myFunction()">
+  <div class="header_index background">
+    <div class="w3-card-4">
+      <img src="banner.jpg" width="100%">
+      <nav class="navbar"  id="navbar">
+        <div class="w3-bar w3-border w3-light-grey w3-card-4">
+          <button class="w3-bar-item w3-button w3-border-right" onclick="indexFunction()"><i class="fa fa-home">&nbsp;<b class="font">Trang Chủ</b></i></button>
+          <button class="w3-bar-item w3-button w3-border-right" onclick="gtFunction()"><b>Giới Thiệu</b></button>
+          <button class="w3-bar-item w3-button w3-border-right" onclick="ctnFunction()"><b>Chè Thái Nguyên</b></button>
+          <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+          <input type="text" class="w3-bar-item w3-input w3-right w3-border-left" placeholder="Tìm kiếm ...">
+        </div>
+      </nav>
+    </div>
+    <br/>
+    <div class="w3-card-4">
+      <img src="header.jpg" class="w3-border" width="100%">
+    </div>
+    <br/>
+    <div id="index">    
+      <table class="body_index">
+        <tr>
+          <td valign="top" width="25%">
+            <div>
+              <div class="w3-bar-block w3-border w3-light-grey">
+                <div class="header_menu w3-light-green w3-border-bottom"><b>Danh mục sản phẩm</b></div>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Loại Bình Dân</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Cành</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Trà Tết</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Thượng Hạng</i></a>
+              </div>
+              <br/>
+              <div class="w3-bar-block w3-border w3-light-grey">
+                <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-phone"><b class="font">&nbsp;&nbsp;Hỗ trợ</b></i></div>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Hotline: </i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Facebook: </i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+              </div>
+            </div>         
+          </td>
+          <td valign="top">
+            <div class="middle_index">
+              <h1><b>Nhập thông tin sản phẩm</b></h1>
+              <br/>
+              <form class="w3-card-4">    
+                <table width="100%" style="padding: 10px;">
+                  <tr>
+                    <td>Mã sản phẩm: </td>
+                    <td><input type="text" name="form_ma" id="form_ma"></td>
+                  </tr>
+                  <tr>
+                    <td>Tên sản phẩm: </td>
+                    <td><input type="text" name="form_ten" id="form_ten"></td>
+                  </tr>
+                  <tr>
+                    <td>Ngày sản xuất: </td>
+                    <td><input type="text" name="form_sanxuat" id="form_sanxuat"></td>
+                  </tr>
+                  <tr>
+                    <td>Hạn sử dụng: </td>
+                    <td><input type="text" name="form_sudung" id="form_sudung"></td>
+                  </tr>
+                  <tr>
+                    <td>Số lượng: </td>
+                    <td><input type="text" name="form_soluong" id="form_soluong"></td>
+                  </tr>
+                  <tr>
+                    <td>Giá: </td>
+                    <td><input type="text" name="form_gia" id="form_gia"></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td><button type="button" class="w3-btn w3-light-green button" id="submit">Đồng ý</button>&nbsp;<input type="reset" value="Nhập lại" class="w3-btn w3-light-green button"></td>
+                  </tr>
+                </table>
+              </form>
+
+            </div>       
+          </td>
+          <td valign="top" width="25%">
+            <div class="w3-right">
+              <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-newspaper-o"><b class="font">&nbsp;&nbsp;Tin nổi bật</b></i></div>
+              <div class="header_menu w3-light-grey">
+                <table>
+                  <tr>
+                    <td><a href="#"><img src="img2098(1).jpg" width="70px;"></a></td>
+                    <td><a href="#" class="list_post">Bế mạc Festival Trà Thái Nguyên - Việt Nam lần thứ hai, năm 2013</a></td>
+                  </tr>
+                </table>        
+              </div>
+              <br/>
+              <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-comments">&nbsp;&nbsp;<b class="font">Thăm hỏi ý kiến</b></i></div>
+            </div>           
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="che_thai_nguyen">
+      <table class="body_index">
+      <tr>
+        <td valign="top" width="25%">
+          <div>
+            <div class="w3-bar-block w3-border w3-light-grey">
+              <div class="header_menu w3-light-green w3-border-bottom"><b>Danh mục sản phẩm</b></div>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Loại Bình Dân</i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Cành</i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Trà Tết</i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Thượng Hạng</i></a>
+            </div>
+            <br/>
+            <div class="w3-bar-block w3-border w3-light-grey">
+              <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-phone"><b class="font">&nbsp;&nbsp;Hỗ trợ</b></i></div>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Hotline: </i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Facebook: </i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+              <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+            </div>
+          </div>         
+        </td>
+        <td valign="top">
+          <div class="middle_index">
+            <h1><b>Thông tin các sản phẩm</b></h1>
+            <br/>
+            <table width="100%" class="output">
+              <tr>
+                <th width="11%">Mã</th>
+                <th width="20%">Tên</th>
+                <th width="17%">NSX</th>
+                <th width="17%">HSD</th>
+                <th width="15%">Số lượng</th>
+                <th width="14%">Giá</th>
+              </tr>
+            </table>
+          </div>       
+        </td>
+    </table>
+    </div>
+  <div id="gioi_thieu">   
+    <table class="body_index">
+        <tr>
+          <td valign="top" width="25%">
+            <div>
+              <div class="w3-bar-block w3-border w3-light-grey">
+                <div class="header_menu w3-light-green w3-border-bottom"><b>Danh mục sản phẩm</b></div>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Loại Bình Dân</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Cành</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Trà Tết</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Chè Thượng Hạng</i></a>
+              </div>
+              <br/>
+              <div class="w3-bar-block w3-border w3-light-grey">
+                <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-phone"><b class="font">&nbsp;&nbsp;Hỗ trợ</b></i></div>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Hotline: </i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;Facebook: </i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+                <a href="#" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-leaf-green">&nbsp;&nbsp;</i></a>
+              </div>
+            </div>         
+          </td>
+          <td valign="top">
+            <div class="middle_index">
+              <h1><b>Giới thiệu chè Thái Nguyên</b></h1>
+              <br/>
+              <div class="text">
+                “Chè Thái, gái Tuyên”, đó là câu cửa miệng của nhiều người khi nói về hai vùng đất của trung du miền núi phía Bắc. Chè ngon phải kể đến chè Thái Nguyên, còn con gái đẹp, dịu dàng thì phải kể đến con gái Tuyên Quang, hẳn rằng câu nói đó không quá đề cao nét độc đáo của hai vùng đất, nhưng ẩn dấu trong đó những điều hoàn toàn khiến cho người ta tin tưởng.<br/><br/>Nói đến văn hóa ẩm thực Việt Nam, người ta không chỉ nói về sự đa dạng trong các cách thưởng thức món ăn hàng ngày của người Việt, và các cách chế biến đến nguyên liệu của món ăn ra sao mà cách uống cũng có nhiều sự đến lạ kì!<br/><br/>Uống là một nhu cầu cần thiết của con người nhằm duy trì sự cân bằng trọng lượng cơ thể, đảm bảo nước cho sự phát triển của con người, người ta có thể nhịn ăn ba ngày nhưng không thể không uống nước được. Trong cách uống của người Việt Nam, phải kể đến cái thú uống nước chè (trà) là một cái thú có từ lâu trên đất nước ta, cho đến nay nó vẫn là một trong những điểm nổi bật trong văn hoá ẩm thực dân tộc.<br/><br/><center><img src="https://www.vietravel.com/UserUpload/tra%201.jpg" width="400px;" alt="am-tra"></center><br/><br/>Cái thú uống nước chè để bắt đầu câu chuyện, bắt đầu của một ngày mới, trong những buổi làm đồng áng vất vả có chén trà xanh, rồi lãng mạn cao hứng thì vừa uống trà vừa ngâm thơ, âu đó là một cái nét đẹp trong cách uống trà vậy.  Mỗi khi cái tên Thái Nguyên được nhắc đến, gợi cho nhiều người về một vùng đất có một bề dày truyền thống cách mạng, vốn là một ATK của Đảng và Bác Hồ trước và sau cách mạng Tháng Tám. Với Hồ Núi Cốc, Đền Đuổm, con Sông Công…song cái đặc sắc nhất đóng góp vào văn hóa của vùng là cây chè và các sản phẩm từ chè.<br/><br/>Đất Thái Nguyên có điều kiện cho cây chè phát triển và nó thực sự trở thành một sản phẩm mang tính đặc thù của quê hương. Khác với các vùng đất trồng chè khác của đất nước, chè Thái Nguyên đã trở thành một “thương hiệu” nổi tiếng được người tiêu dùng đánh giá cao. Đất Thái Nguyên, đặc biệt là vùng chè đặc sản Tân Cương được coi là một trong những vùng cung cấp những loại chè ngon nổi tiếng. Đây chính là vùng đất chè truyền thống của tỉnh. Sản phẩm chè của quê hương được đem đi khắp các vùng miền và cả thị trường nước ngoài, được những người sành chè và nhiều thị trường khó tính chấp nhận. Để có được điều hạnh phúc và tự hào đó, Chè Thái Nguyên đã thực sự tự mình làm cho mình “đứng” được trong lòng người tiêu dùng. Điều đặc biệt là khi các loại chè được nhập khẩu từ nước ngoài về đây trồng như Bát tiên, Ô long… sau một thời gian dần dần bị “nội hóa”, trở thành “chè Tân Cương” “chè Thái Nguyên”. Sở dĩ ở Tân cương có những loại chè ngon cũng bởi một phần chất đất ở đây được trời phú cho tươi tốt và có “duyên” với cây chè. Cũng chả vì thế mà mỗi khi người ta nhắc đến hai chữ Thái Nguyên, đâu chỉ là vùng đất gang thép, đâu chỉ là một thành phố công nghiệp, mà còn được biết đến một sản phẩm không có vùng đất nào của Tổ quốc có được, đó chình là “chè xanh”. Khi vỡ lẽ, du khách mới “à” lên một tiếng! “Có chè nữa”.<br/><br/><center><img src="https://www.vietravel.com/UserUpload/doi%20che.jpg" width="400px;" alt="doi-che"></center><br/><br/>Một cân chè Thái Nguyên ngon phải là một cân chè khi sao không cháy, đều lửa không có mùi khét, các cánh chè khi sao đều đặn không nát vụn mà cuộn tròn với nhau, màu của chè ngon thường là màu mốc cau, dáng hình ngọn chè thành phẩm là hình móc câu. Khi trồng chè người ta không được trồng cạnh xoan vì nó làm mất đi vị của cây chè. Bên cạnh đó là khi nhai thử, nhả bã thấy chè xanh như khi sao, khi uống, ngậm lâu trong cổ họng thấy ngọt dần của vị chè chứ không phải là ngọt của mì chính pha lẫn trong đó để đánh lừa cảm giác. Cách pha chè cũng phải hết sức sành sỏi, phải chọn ấm thích hợp, tráng ấm và nhiều thủ thuật khác mà có lẽ chỉ có những bậc cao nhân mới hiểu hết được. Mở gói chè, mùi hương có thể bay khắp gian phòng làm ngây ngất ngay từ khi chưa uống. Vì vậy, một cân chè Thái Nguyên ngon luôn được người uống chon lựa rất kĩ càng. Khi chế biến chè cũng phải hết sức cẩn thận trong việc hái, sao và sản phẩm cuối cùng đến với người uống là bằng mồ hôi và công sức của bao ngày.<br/><br/>Ngày nay, chúng ta đang tiến nhanh trên con đường hiện đại hóa đất nước, sự tất bật khiến cho con người ta luôn thèm một cảm giác thanh thản và nhẹ nhàng để quên đi những giờ phút lao động mệt nhọc và căng thẳng. Bên cạnh đó là, sự chia sẻ và lắng nghe giữa mọi người trong cuộc sống. Và vì thế, chè Thái Nguyên ngày càng có vị trí quan trọng trong văn hóa ẩm thực Việt Nam. Khi một người con Thái Nguyên đi xa, luôn tâm niệm trong mình niềm tự hào về “đứa con tinh thần” của vùng đất. Và khi du khách đến thăm Thái Nguyên, hãy thưởng thức chè dù chỉ một lần, cái cảm giác ngây ngất, được đắm mình trong cái ngào ngạt, thơm ngát, nhẹ nhàng nhưng lan tỏa khắp da thịt, thì lúc đó, bạn đã đến Thái Nguyên rồi đấy! Nghệ thuật uống chè trở thành một “đạo”, và là một thú vui hết sức tao nhã và đôi khi hết sức cầu kì. Do đó, chúng ta thấy “trà đạo” của Nhật Bản là một trong những nghi thức văn hóa mang đậm phong cách phương Đông. Chỉ có trong cách uống chè ta mới thấy được những điều đó.<br/><br/>Khi bước chân lên mỗi vùng miền của đất nước là mỗi cảm nhận khác nhau trong bức tranh tươi đẹp chung của Tổ quốc. Chậm rãi, khoan thai, thong thả đi dạo trên những cánh đồng chè, những đồi chè của Thái Nguyên ngút tầm mắt, bạn sẽ cảm thấy lâng lâng và như hít sâu vào lồng ngực mình một thứ cảm giác chỉ có được ở nơi đây mà thôi. Trồng chè, chế biến chè, sao chè và đảm bảo chất lượng qua thời gian là cả một quá trình nghệ thuật. Quá trình ấy là một nét đẹp cần được bảo tồn và lưu giữ cho con cháu muôn đời. Nhưng song song với đó là việc làm cho chè Thái Nguyên trở thành một thương hiệu để có thể cạnh tranh trên thị trường là điều vô cùng cần thiết.<br/><br/>Mỗi khi Tết đến xuân về, ngồi bên ấm chè xanh nóng trong không khí ấm cúng của ngày mồng 1, mọi người đều cảm thấy sức xuân đang đâm chồi nảy lộc như chính những mầm chè xanh đang vươn lên nhìn cánh én. Và trong cái không khí nóng bức của mùa hè, những giây phút thư giãn bên chén trà thực là những giây phút thư thái.
+              </div>
+            </div>       
+          </td>
+          <td valign="top" width="25%">
+            <div class="w3-right">
+              <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-newspaper-o"><b class="font">&nbsp;&nbsp;Tin nổi bật</b></i></div>
+              <div class="header_menu w3-light-grey">
+                <table>
+                  <tr>
+                    <td><a href="#"><img src="img2098(1).jpg" width="70px;"></a></td>
+                    <td><a href="#" class="list_post">Bế mạc Festival Trà Thái Nguyên - Việt Nam lần thứ hai, năm 2013</a></td>
+                  </tr>
+                </table>        
+              </div>
+              <br/>
+              <div class="header_menu w3-light-green w3-border-bottom"><i class="fa fa-comments">&nbsp;&nbsp;<b class="font">Thăm hỏi ý kiến</b></i></div>
+            </div>           
+          </td>
+        </tr>
+      </table>
+  </div>
+
+  </div>
+
+
+  <div class="w3-container w3-grey w3-opacity-min">
+    <p class="w3-left"><b>Copyright &copy;2017: Designed by BlackCrown</b></p>
+    <p class="w3-right"><a href="http://facebook.com/hungkuppi199x"><i class="fa fa-facebook-square-blue"></i></a></p>
+  </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="my-js.js"></script>
+  </body>
+
+</html>
